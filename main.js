@@ -1,10 +1,8 @@
-// body
-let body = document.querySelector("body");
-
 // create wrapper
+let body = document.querySelector("body");
 let wrapper = document.createElement("div");
 wrapper.className = "wrapper";
-body.append(wrapper);
+body.append(wrapper); 
 
 // create title
 let title = document.createElement("p");
@@ -64,12 +62,48 @@ for (let i = 0; i < keyDownEn.length; i++) {
   for (let j = 0; j < keyDownEn[i].length; j++) {
     let key = document.createElement("div");
     key.className = `key ${keyId[i][j]}`;
-    key.textContent = keyDownEn[i][j];    
+    key.textContent = keyDownEn[i][j];  
+    key.id = keyId[i][j];
     row.append(key);
   };
 }
 
+let keys = document.querySelectorAll(".key");
 
+document.addEventListener("keydown", (event) => {  
+  keys.forEach((key) => {
+    if (event.code == key.id) {
+      key.classList.add("active");
+    }    
+  })
+});
 
-    
-    
+document.addEventListener("keyup", (event) => {
+  keys.forEach((key) => {
+    if (event.code == key.id) {
+      key.classList.remove("active");
+    }
+  });
+});
+
+let keyboardDiv = document.getElementById("keyboard");
+
+keyboardDiv.addEventListener("mousedown", (event) => {
+  keys.forEach((key) => {
+    if (event.target.id == key.id) {
+      key.classList.add("active");
+    }
+  });
+});
+
+keyboardDiv.addEventListener("mouseup", (event) => {
+  keys.forEach((key) => {
+    if (event.target.id == key.id) {
+      key.classList.remove("active");
+    }
+  });
+});
+
+// console.log(event);
+// console.log(event.code); // ShiftRight или ShiftLeft
+// console.log(event.key); //  Shift        
