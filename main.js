@@ -406,6 +406,7 @@ const pressKeyHandler = () => {
   document.addEventListener("keydown", (event) => {
     pressedKey(event);
     toggleCasesPress(event);
+    textarea.focus();
   });
 
   document.addEventListener("keyup", (event) => {
@@ -429,5 +430,83 @@ const pressMouseHandler = () => {
 const clickMouseHandler = () => {
   document.getElementById("keyboard").addEventListener("click", (event) => {
     toggleCasesClick(event);
+    pressInput(event);
   });
-}      
+}    
+
+const keyBackspace = () => {
+  if (textarea.value.length === 0) {
+    return;
+  }
+  textarea.setRangeText(
+    "",
+    textarea.selectionStart,
+    textarea.selectionEnd,
+    "end"
+  );
+  if (textarea.selectionStart === textarea.selectionEnd) {
+    textarea.setRangeText(
+      "",
+      textarea.selectionStart - 1,
+      textarea.selectionEnd,
+      "end"
+    );
+  }
+};
+
+const keyDelete = () => {
+  if (textarea.selectionStart === textarea.selectionEnd) {
+    textarea.setRangeText(
+      "",
+      textarea.selectionStart,
+      textarea.selectionEnd + 1,
+      "end"
+    );
+  } else if (textarea.selectionStart !== textarea.selectionEnd) {
+    textarea.setRangeText(
+      "",
+      textarea.selectionStart,
+      textarea.selectionEnd,
+      "end"
+    );
+  }
+};
+
+const pressInput = (event) => {
+  // console.dir(event.target.innerText);
+  textarea.focus();
+  
+  if (
+    event.target.id !== "keyboard" &&
+    !event.target.classList.contains("row")
+  ) {
+  switch (event.target.id) {
+    case "Space":
+      textarea.value += " ";
+      break;
+    case "Enter":
+      textarea.value += "\n";
+      break;
+    case "Tab":
+      textarea.value += "    ";
+      break;
+    case "Backspace":
+      keyBackspace();
+    case "Delete":
+      keyDelete();
+    case "CapsLock":
+    case "ShiftLeft":
+    case "ShiftRight":
+    case "AltLeft":
+    case "AltRight":
+    case "ControlLeft":
+    case "ControlRight":
+    case "MetaLeft":
+      textarea.value += "";
+      break;
+    default:
+      textarea.value += event.target.innerText;
+      break;
+    }     
+  }  
+};
