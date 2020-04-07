@@ -1,7 +1,7 @@
 
-1. Задание "Виртуальная клавиатура" https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-virtual-keyboard.md
+1. Задание https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-virtual-keyboard.md
 2. Скриншот https://drive.google.com/file/d/1WBHzyig6-OBNmaXJ00mx9a_zniav4o7T/view?usp=sharing
-3. Демо https://katerina-kirilenko.github.io/Virtual-keyboard/
+3. Демо https://v-keyboard-kirilenko.netlify.com/
 4. Дата сдачи: 2020-04-07 / Дата дедлайна: 2020-04-07 23:59
 5. Реализовано:
 
@@ -15,5 +15,3 @@
 
 **Дополнительный набор:**
 - реализована анимация нажатия на кнопку: +15
-
-Итого: 75 минус неопределенное кол-во баллов за спагетти-код и кучу багов...
