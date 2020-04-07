@@ -61,6 +61,7 @@
   cursor: pointer;
   user-select: none;
   transition: border-radius 0.3s, background-color 0.3s;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .AltLeft,
@@ -113,5 +114,21 @@
 .key.active,
 .key.press {
   background-color: #520095;
-  border-radius: 50px;
+}
+
+.key.active {
+  animation-duration: 0.2s;
+  animation-name: press;  
+}
+
+@keyframes press {
+  from {
+    transform: scale(1);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+
+  to {
+    transform: scale(0.9);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  }
 }
