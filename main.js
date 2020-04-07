@@ -52,28 +52,28 @@ const keyDownEn = [
   ['Tab', "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "[", "]", '\\', 'Del', ],
   ['CapsLock', "a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'", 'Enter',],
   ["Shift", "z", "x", "c", "v", "b", "n", "m", ",", ".", "/", '▲', "Shift", ],
-  ["Ctrl", "Win", "Alt", " ", "Alt", "◄", "▼", "►", "Ctrl"],
+  ["Ctrl", "Ru", "Alt", " ", "Alt", "◄", "▼", "►", "Ctrl"],
 ];
 const keyUpEn = [
   ['~', '!', "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+", 'Backspace', ],
   ['Tab', "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "{", "}", '|', 'Del', ],
   ['CapsLock', "A", "S", "D", "F", "G", "H", "J", "K", "L", ":", "\"", 'Enter',],
   ["Shift", "Z", "X", "C", "V", "B", "N", "M", "<", ">", "?", '▲', "Shift", ],
-  ["Ctrl", "Win", "Alt", " ", "Alt", "◄", "▼", "►", "Ctrl"],
+  ["Ctrl", "Ru", "Alt", " ", "Alt", "◄", "▼", "►", "Ctrl"],
 ];
 const keyCapsEn = [
   ['`', '1', "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", 'Backspace', ],
   ['Tab', "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", '\\', 'Del', ],
   ['CapsLock', "A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'", 'Enter',],
   ["Shift", "Z", "X", "C", "V", "B", "N", "M", ",", ".", "/", '▲', "Shift", ],
-  ["Ctrl", "Win", "Alt", " ", "Alt", "◄", "▼", "►", "Ctrl"],
+  ["Ctrl", "Ru", "Alt", " ", "Alt", "◄", "▼", "►", "Ctrl"],
 ];
 const keyShiftCapsEn = [
   ['~', '!', "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+", 'Backspace', ],
   ['Tab', "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "{", "}", '|', 'Del', ],
   ['CapsLock', "a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'", 'Enter',],
   ["Shift", "z", "x", "c", "v", "b", "n", "m", "<", ">", "?", "▲", "Shift", ],
-  ["Ctrl", "Win", "Alt", " ", "Alt", "◄", "▼", "►", "Ctrl"],
+  ["Ctrl", "Ru", "Alt", " ", "Alt", "◄", "▼", "►", "Ctrl"],
 ];
 
 // cases Ru keyboard
@@ -82,28 +82,28 @@ const keyDownRu = [
   ['Tab', "й", "ц", "у", "к", "е", "н", "г", "ш", "щ", "з", "х", "ъ", '\\', 'Del', ],
   ['CapsLock', "ф", "ы", "в", "а", "п", "р", "о", "л", "д", "ж", "э", 'Enter',],
   ["Shift", "я", "ч", "с", "м", "и", "т", "ь", "б", "ю", ".", "▲", "Shift", ],
-  ["Ctrl", "Win", "Alt", " ", "Alt", "◄", "▼", "►", "Ctrl"],
+  ["Ctrl", "En", "Alt", " ", "Alt", "◄", "▼", "►", "Ctrl"],
 ];
 const keyUpRu = [
   ['Ё', '!', "@", "#", "$", "%", ":", "?", "*", "(", ")", "_", "+", 'Backspace', ],
   ['Tab', "Й", "Ц", "У", "К", "Е", "Н", "Г", "Ш", "Щ", "З", "Х", "Ъ", '/', 'Del', ],
   ['CapsLock', "Ф", "Ы", "В", "А", "П", "Р", "О", "Л", "Д", "Ж", "Э", 'Enter',],
   ["Shift", "Я", "Ч", "С", "М", "И", "Т", "Ь", "Б", "Ю", ",", "▲", "Shift", ],
-  ["Ctrl", "Win", "Alt", " ", "Alt", "◄", "▼", "►", "Ctrl"],
+  ["Ctrl", "En", "Alt", " ", "Alt", "◄", "▼", "►", "Ctrl"],
 ];
 const keyCapsRu = [
   ['Ё', '1', "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", 'Backspace', ],
   ['Tab', "Й", "Ц", "У", "К", "Е", "Н", "Г", "Ш", "Щ", "З", "Х", "Ъ", '\\', 'Del', ],
   ['CapsLock', "Ф", "Ы", "В", "А", "П", "Р", "О", "Л", "Д", "Ж", "Э", 'Enter',],
   ["Shift", "Я", "Ч", "С", "М", "И", "Т", "Ь", "Б", "Ю", ".", "▲", "Shift", ],
-  ["Ctrl", "Win", "Alt", " ", "Alt", "◄", "▼", "►", "Ctrl"],
+  ["Ctrl", "En", "Alt", " ", "Alt", "◄", "▼", "►", "Ctrl"],
 ];
 const keyShiftCapsRu = [
   ['ё', '!', "@", "#", "$", "%", ":", "?", "*", "(", ")", "_", "+", 'Backspace', ],
   ['Tab', "й", "ц", "у", "к", "е", "н", "г", "ш", "щ", "з", "х", "ъ", '/', 'Del', ],
   ['CapsLock', "ф", "ы", "в", "а", "п", "р", "о", "л", "д", "ж", "э", 'Enter',],
   ["Shift", "я", "ч", "с", "м", "и", "т", "ь", "б", "ю", ",", "▲", "Shift", ],
-  ["Ctrl", "Win", "Alt", " ", "Alt", "◄", "▼", "►", "Ctrl"],
+  ["Ctrl", "En", "Alt", " ", "Alt", "◄", "▼", "►", "Ctrl"],
 ];
 
 // keys codes
@@ -112,7 +112,7 @@ const keyId = [
   ["Tab", "KeyQ", "KeyW", "KeyE", "KeyR", "KeyT", "KeyY", "KeyU", "KeyI", "KeyO", "KeyP", "BracketLeft", "BracketRight", "Backslash", "Delete",],
   ["CapsLock", "KeyA", "KeyS", "KeyD", "KeyF", "KeyG", "KeyH", "KeyJ", "KeyK", "KeyL", "Semicolon", "Quote", "Enter",],
   ["ShiftLeft", "KeyZ", "KeyX", "KeyC", "KeyV", "KeyB", "KeyN", "KeyM", "Comma", "Period", "Slash", "ArrowUp", "ShiftRight",],
-  ["ControlLeft", "MetaLeft", "AltLeft", "Space", "AltRight", "ArrowLeft", "ArrowDown", "ArrowRight", "ControlRight"],
+  ["ControlLeft", "en", "AltLeft", "Space", "AltRight", "ArrowLeft", "ArrowDown", "ArrowRight", "ControlRight"],
 ];
 
 // сохранение языка
@@ -173,11 +173,9 @@ const checkShift = () => {
 const toggleCasesClick = (event) => {
 
   //вызов смены раскладки на шифт+альт
-  if (
-    checkShift() &&
-    (event.target.id === "AltLeft" || event.target.id === "AltRight")
-  ) {
+  if (event.target.id === "en") {
     changeLanguage();
+    saveState();
     
     // вызов смены раскладки на капс+шифт
   } else if (checkShift() && keyboardCaps()) {
@@ -501,12 +499,12 @@ const pressInput = (event) => {
     case "AltRight":
     case "ControlLeft":
     case "ControlRight":
-    case "MetaLeft":
+    case "en":
       textarea.value += "";
       break;
     default:
       textarea.value += event.target.innerText;
       break;
-    }     
+  }     
   }  
 };
