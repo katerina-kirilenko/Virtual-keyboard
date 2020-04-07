@@ -56,19 +56,11 @@
   line-height: 40px;
   text-align: center;
   color: #fff;
-  background: #303030;
+  background: #424242;
   border-radius: 3px;
   cursor: pointer;
   user-select: none;
   transition: border-radius 0.3s, background-color 0.3s;
-}
-
-.case-down,
-.case-up,
-.shift-caps,
-.caps {
-  display: block;
-  min-height: 40px;
 }
 
 .AltLeft,
@@ -118,7 +110,8 @@
   background: #7a5797;
 }
 
-.key.active {
+.key.active,
+.key.press {
   background-color: #520095;
   border-radius: 50px;
 }
